@@ -95,8 +95,8 @@ From these sites:- <br>
         <li>Depth-First Search</li>
         <li>Breadth-First Search</li>
       </ul>
-    </li>
-    <li>Sorting Algorithms
+  </li>
+  <li>Sorting Algorithms
       <ul>
         <li>Bubble Sort</li>
         <li>Selection Sort</li>
@@ -105,8 +105,8 @@ From these sites:- <br>
         <li>Quick Sort</li>
         <li>Heap Sort</li>
       </ul>
-    </li>
-    <li>Graph Algorithms
+  </li>
+  <li>Graph Algorithms
       <ul>
         <li>Depth-First Search</li>
         <li>Breadth-First Search</li>
@@ -114,8 +114,8 @@ From these sites:- <br>
         <li>Strongly Connected Components</li>
         <li>Articulation Points and Bridges</li>
       </ul>
-    </li>
-    <li>Dynamic Programming
+  </li>
+  <li>Dynamic Programming
       <ul>
         <li>Introduction to DP</li>
         <li>Fibonacci Series using DP</li>
@@ -125,8 +125,8 @@ From these sites:- <br>
         <li>Matrix Chain Multiplication</li>
         <li>Dynamic Programming on Trees</li>
       </ul>
-    </li>
-    <li>Mathematical and Bit Manipulation Algorithms
+  </li>
+  <li>Mathematical and Bit Manipulation Algorithms
       <ul>
         <li>Prime Numbers and Sieve of Eratosthenes</li>
         <li>Greatest Common Divisor</li>
@@ -134,8 +134,8 @@ From these sites:- <br>
         <li>Modular Arithmetic</li>
         <li>Bit Manipulation Tricks</li>
       </ul>
-    </li>
-    <li>Advanced Topics
+  </li>
+  <li>Advanced Topics
       <ul>
         <li>Trie based Algorithms
           <ul>
@@ -156,7 +156,5 @@ From these sites:- <br>
             <li>KMP Algorithm</li>
             <li>Rabin-Karp Algorithm</li>
           </ul>
-        </li>
-      </ul>
-    </li>
+  </li>
 </ul>
