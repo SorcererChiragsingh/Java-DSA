@@ -1,7 +1,7 @@
 // Leetcode:- https://leetcode.com/problems/majority-element/description/
 // Leet Code Question no. 169
 // Majority Element Problem DSA
-// Solution:- https://www.youtube.com/watch?v=1r8kzrXJiUk&ab_channel=Technosage
+// Solution:- https://www.youtube.com/watch?v=1r8kzrXJiUk&ab_channel=Technosage; https://www.youtube.com/watch?v=PUCEWmefFm4&ab_channel=Codebix
 
 // Easy
 // Moore's voting algorithm
