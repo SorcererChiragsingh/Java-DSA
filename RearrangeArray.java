@@ -6,33 +6,30 @@
 // Medium
 // 
 
-public class RearrangeArray 
-{
-    public static void main(String[] args) 
-    {
-        int[] nums={3,1,-2,-5,2,-4};
-        System.out.println(rearrangeArray(nums));
+import java.util.Arrays;
+
+public class RearrangeArray {
+    public static void main(String[] args) {
+        int[] nums = {3, 1, -2, -5, 2, -4};
+        System.out.println(Arrays.toString(rearrangeArray(nums))); // You should use Arrays.toString() to convert the array to a string representation for printing.
     }
-        public static int[] rearrangeArray(int[] nums) 
-        {
-            int n = nums.length;
-            int[] ans = new int[n];
-            int positiveIndex = 0, negativeIndex = 1;
-    
-            for (int num : nums) 
-            {
-                if (num > 0) 
-                {
-                    ans[positiveIndex] = num;
-                    positiveIndex += 2;
-                }
-                if (num < 0) 
-                {
-                    ans[negativeIndex] = num;
-                    negativeIndex += 2;
-                }
+
+    public static int[] rearrangeArray(int[] nums) {
+        int n = nums.length;
+        int[] ans = new int[n];
+        int positiveIndex = 0, negativeIndex = 1;
+
+        for (int num : nums) {
+            if (num > 0) {
+                ans[positiveIndex] = num;
+                positiveIndex += 2;
+            } else if (num < 0) {
+                ans[negativeIndex] = num;
+                negativeIndex += 2;
             }
-            return ans;
         }
+        return ans;
+    }
 }
+
 
