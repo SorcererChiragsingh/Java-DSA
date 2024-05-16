@@ -1,7 +1,7 @@
 // Leetcode:- https://leetcode.com/problems/set-matrix-zeroes/description/
 // Leet Code Question no. 73
 // Set Matrix Zeroes Problem DSA
-// Solution:-
+// Solution:- https://leetcode.com/problems/set-matrix-zeroes/solutions/3472518/full-explanation-super-easy-constant-space ; https://www.youtube.com/watch?v=N0MgLvceX7M&ab_channel=takeUforward
 
 // Medium
 // 
@@ -36,7 +36,8 @@ If the zero is found in the first column (j == 0), fc is set to "true".
             }
         }
 /**
- 
+ The second set of nested loops start from index 1 (ignoring the first row and column initially).
+If the marker in the first row or column of a given element is 0, that element is set to 0.
 */        
         for (int i = 1; i < matrix.length; i++) 
         {
@@ -52,6 +53,8 @@ If the zero is found in the first column (j == 0), fc is set to "true".
 Setting First Row and Column Zeroes if Necessary:
 
 Finally, based on the flags fr and fc, the first row and first column are set to zero if needed.
+If fr is true, all elements in the first row are set to 0.
+If fc is true, all elements in the first column are set to 0.
 */        
         if (fr) 
         {
@@ -69,6 +72,11 @@ Finally, based on the flags fr and fc, the first row and first column are set to
         }     
     }
 // Main function
+/**
+ The main method creates an instance of SetMatrixZeroes and initializes a sample matrix.
+It prints the original matrix, calls the setZeroes method to modify the matrix, and then prints the modified matrix.
+The printMatrix method is a utility function to print the matrix in a readable format.
+ */
     public static void main(String[] args) 
     {
         SetMatrixZeroes obj = new SetMatrixZeroes();
@@ -101,3 +109,81 @@ Finally, based on the flags fr and fc, the first row and first column are set to
         }
     }
 }
+
+
+/** Code without explaination.
+ public class SetMatrixZeroes  
+{
+public void setZeroes(int[][] matrix) 
+{
+    boolean fr = false,fc = false;
+    for(int i = 0; i < matrix.length; i++) 
+{
+        for(int j = 0; j < matrix[0].length; j++) 
+{
+            if(matrix[i][j] == 0) 
+{
+                if(i == 0) fr = true;
+                if(j == 0) fc = true;
+                matrix[0][j] = 0;
+                matrix[i][0] = 0;
+            }
+        }
+    }
+    for(int i = 1; i < matrix.length; i++) 
+{
+        for(int j = 1; j < matrix[0].length; j++) 
+{
+            if(matrix[i][0] == 0 || matrix[0][j] == 0) 
+{
+                matrix[i][j] = 0;
+        }}
+    }
+    if(fr) 
+{
+        for(int j = 0; j < matrix[0].length; j++) 
+{
+            matrix[0][j] = 0;
+        }
+    }
+    if(fc) 
+{
+        for(int i = 0; i < matrix.length; i++) 
+{
+            matrix[i][0] = 0;
+        }
+    }
+}}  
+public static void main(String[] args) 
+    {
+        SetMatrixZeroes obj = new SetMatrixZeroes();
+        
+        // Example matrix
+        int[][] matrix = {
+            {1, 1, 1},
+            {1, 0, 1},
+            {1, 1, 1}
+        };
+
+        System.out.println("Original Matrix:");
+        printMatrix(matrix);
+
+        obj.setZeroes(matrix);
+
+        System.out.println("Matrix After setZeroes:");
+        printMatrix(matrix);
+    }
+
+    public static void printMatrix(int[][] matrix) 
+    {
+        for (int[] row : matrix) 
+        {
+            for (int elem : row) 
+            {
+                System.out.print(elem + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+ */
