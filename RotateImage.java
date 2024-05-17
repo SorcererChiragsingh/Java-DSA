@@ -12,6 +12,17 @@ public class RotateImage
     public static void rotate(int[][] matrix) 
     {
         // Transpose the matrix 
+/**
+Transpose the Matrix
+The first step in rotating the matrix is to transpose it. Transposing a matrix means converting its rows into columns and columns into rows. 
+*/  
+
+/**
+ In this nested loop:-
+The outer loop iterates over each row i. 
+The inner loop iterates over each column j starting from i, ensuring that we only swap elements once.
+The elements matrix[i][j] and matrix[j][i] are swapped.
+*/      
         for (int i = 0; i < matrix.length; i++) 
         {
             for (int j = i; j < matrix[0].length; j++) 
@@ -22,7 +33,18 @@ public class RotateImage
                 matrix[j][i] = temp;
             }
         }
+        
         // Reverse 
+/**
+After transposing, the next step is to reverse each row of the matrix. This will complete the 90-degree clockwise rotation.
+*/        
+
+/**
+ In this nested loop:-
+ The outer loop iterates over each row i.
+ The inner loop iterates over each element j in the row up to the middle (matrix.length / 2).
+ The elements matrix[i][j] and matrix[i][matrix.length - 1 - j] are swapped, effectively reversing the row.
+ */
         for (int i = 0; i < matrix.length; i++) 
         {
             for (int j = 0; j < matrix.length / 2; j++) 
@@ -35,6 +57,8 @@ public class RotateImage
         }
     
     }
+
+    // Main Function
     public static void main(String args[]) 
     {
         int arr[][] =  {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
