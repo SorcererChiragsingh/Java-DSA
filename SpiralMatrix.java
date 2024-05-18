@@ -14,10 +14,14 @@ import java.util.List;
 
 public class SpiralMatrix // class:- SpiralMatrix
 {
-    public List<Integer> spiralOrder(int[][] matrix) // Method:- spiralOrder
+    public List<Integer> spiralOrder(int[][] matrix) // Method:- spiralOrder; 
+    // List<Integer>: This specifies the return type of the method. The method will return a list of integers (List is an interface from the java.util package, and Integer is a wrapper class for the primitive type int).
+    // int[][] matrix: This is the parameter of the method. It expects a 2D array of integers (matrix) as input.
     {
         
         List<Integer> res = new ArrayList<Integer>();
+        // List<Integer> res: This declares a variable named res of type List<Integer>. This will hold the integers in spiral order.
+        // new ArrayList<Integer>(): This creates a new instance of ArrayList<Integer>, which is a concrete implementation of the List interface. The ArrayList is a resizable array, meaning it can grow as needed to accommodate more elements.
         
         if (matrix.length == 0) // If the matrix is empty (i.e., has zero rows), the function returns the empty list "res".
         {
