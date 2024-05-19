@@ -29,8 +29,8 @@ public class SubarraySumEqualsK
         return result;
     }
     public static void main(String[] args) {
-        int[] nums = {3, 1, 2, 4};
-        int k = 6;
+        int[] nums = {1,2,3,-3,1,1,1,4,2,-3};
+        int k = 3;
         int result = subarraySum(nums, k);
         System.out.println("The number of subarrays is: " + result);
     }
