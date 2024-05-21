@@ -1,7 +1,7 @@
 // Leetcode:- https://leetcode.com/problems/palindrome-number/description/
 // Leet Code Question no. 9
 // Palindrome Number Problem DSA
-// Solution:- 
+// Solution:- https://www.youtube.com/watch?v=to4Ufp0MU4w&ab_channel=Technosage
 
 // 
 // Basic Maths Problem
