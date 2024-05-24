@@ -27,16 +27,16 @@ public class PlusOne
     public static int [] plusOne (int [] digits)
     {
         int n = digits.length;
-        for (int i= n-1 ; i>=0 ; i--) // checking from the right side.
+        for (int i= n-1 ; i>=0 ; i--) // checking from the right side.(Going form right to left)
         {
-            if ( digits[i] != 9)
+            if ( digits[i] != 9) // checking for numbers 1 to 8
             {
                 digits[i]++;
                 break;
             }
-            else 
+            else         // If number is 9 then,
             {
-                digits[i]=0;
+                digits[i]=0;  // replace it with 0, then again traverse in above loop. 
             }
         }
         if (digits[0]==0)  // if index 0 pe value 0 h to 
