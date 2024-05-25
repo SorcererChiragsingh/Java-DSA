@@ -40,7 +40,6 @@ public class RomanToInteger
             Sum = Sum + getval (ch1);
         }
         return Sum;
-        
     }
     public static void main(String[] args) 
     {
