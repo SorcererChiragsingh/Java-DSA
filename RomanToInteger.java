@@ -41,7 +41,7 @@ public class RomanToInteger
         }
         return Sum;
     }
-    public static void main(String[] args) 
+        public static void main(String[] args) 
     {
         RomanToInteger converter = new RomanToInteger();
         String romanNumeral = "MCMXCIV"; // Example input
