@@ -47,3 +47,22 @@ public class PowerOfTwo
         return true;
     }
 }
+/**
+ class Solution 
+{
+    public boolean isPowerOfTwo(int n) 
+    {
+          // start to iterate in range from 1 to n
+        for(long i = 0; i <= n; i++) {
+            // declare power variable 2 of current i
+            long power = (long) Math.pow(2, i);
+            // check if power math n, if yes we return true
+            if(power == n) return true;
+            // check if our power exceeds n, then return false
+            if(power > n) return false;
+        }
+        // if non of the cases above return falseM
+        return false;
+    }
+}
+ */
