@@ -20,6 +20,7 @@ Input: n = 1
 Output: true
 Explanation: 2^0 = 1 // PowerOfTwo 
  */
+
 public class PowerOfTwo 
 {
     public static void main(String[] args)
@@ -47,6 +48,7 @@ public class PowerOfTwo
         return true;
     }
 }
+
 /**
  class Solution 
 {
