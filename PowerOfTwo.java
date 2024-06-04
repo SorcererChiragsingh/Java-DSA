@@ -49,7 +49,7 @@ public class PowerOfTwo
     }
 }
 
-/**
+/** Solution -2
  class Solution 
 {
     public boolean isPowerOfTwo(int n) 
@@ -69,7 +69,7 @@ public class PowerOfTwo
 }
  */
 
-/**
+/** Solution -3
 class Solution 
 {
     public boolean isPowerOfTwo(int n) 
