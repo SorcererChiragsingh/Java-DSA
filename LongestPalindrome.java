@@ -16,24 +16,29 @@ import java.util.Map;
 
 public class LongestPalindrome 
 {
-    public int longestPalindrome(String s) {
+    public int longestPalindrome(String s) 
+    {
         Map<Character, Integer> counts = new HashMap<>();
         
-        for (char c : s.toCharArray()) {
+        for (char c : s.toCharArray()) 
+        {
             counts.put(c, counts.getOrDefault(c, 0) + 1);
         }
         
         int length = 0;
         boolean hasOdd = false;
         
-        for (int count : counts.values()) {
+        for (int count : counts.values()) 
+        {
             length += (count / 2) * 2;
-            if (count % 2 == 1) {
+            if (count % 2 == 1) 
+            {
                 hasOdd = true;
             }
         }
         
-        if (hasOdd) {
+        if (hasOdd) 
+        {
             length += 1;
         }
         
