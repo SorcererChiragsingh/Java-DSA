@@ -49,9 +49,11 @@ public class LongestPalindrome
 
 
 /**
- class Solution {
+ class Solution 
+ {
 
-    public int longestPalindrome(String s) {
+    public int longestPalindrome(String s) 
+    {
 
         // Map to store frequency of occurrence of each character
 
@@ -59,7 +61,8 @@ public class LongestPalindrome
 
         // Count frequencies
 
-        for (char c : s.toCharArray()) {
+        for (char c : s.toCharArray()) 
+        {
 
             frequencyMap.put(c, frequencyMap.getOrDefault(c, 0) + 1);
 
@@ -69,11 +72,13 @@ public class LongestPalindrome
 
         boolean hasOddFrequency = false;
 
-        for (int freq : frequencyMap.values()) {
+        for (int freq : frequencyMap.values()) 
+        {
 
             // Check is the frequency is even
 
-            if ((freq % 2) == 0) {
+            if ((freq % 2) == 0) 
+            {
 
                 res += freq;
 
