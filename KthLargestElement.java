@@ -17,7 +17,7 @@ import java.util.Arrays;
     }
 }
  */
-class Solution 
+class KthLargestElement
 {
     public int findKthLargest(int[] nums, int k)
      {
