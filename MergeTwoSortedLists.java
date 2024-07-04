@@ -23,7 +23,8 @@ public class MergeTwoSortedLists
         ListNode dummy = new ListNode();
         ListNode cur = dummy;
 
-        while (list1 != null && list2 != null) {
+        while (list1 != null && list2 != null) 
+        {
             if (list1.val > list2.val) 
             {
                 cur.next = list2;
