@@ -17,32 +17,50 @@ import java.util.Arrays;
     }
 }
  */
-class KthLargestElement
+import java.util.HashMap;
+
+public class KthLargestElement 
 {
-    public int findKthLargest(int[] nums, int k)
-     {
+    public static void main(String[] args) 
+    {
+        // Initialize an array and a value for k
+        int[] nums = {3, 2, 1, 5, 6, 4};
+        int k = 2;
+
+        // Create an instance of KthLargestElement
+        KthLargestElement finder = new KthLargestElement();
+
+        // Find the kth largest element
+        int result = finder.findKthLargest(nums, k);
+
+        // Print the result
+        System.out.println("The " + k + "th largest element is: " + result);
+    }
+
+    public int findKthLargest(int[] nums, int k) 
+    {
         int main_max = Integer.MIN_VALUE;
-        HashMap<Integer,Integer> hm = new HashMap<>();
-        for(int i=0;i<nums.length;i++)
+        HashMap<Integer, Integer> hm = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) 
         {
-            if(hm.containsKey(nums[i]))
+            if (hm.containsKey(nums[i])) 
             {
-                hm.put(nums[i],hm.get(nums[i]) +1);
-            }else
+                hm.put(nums[i], hm.get(nums[i]) + 1);
+            } else 
             {
-                hm.put(nums[i],1);
+                hm.put(nums[i], 1);
             }
-            main_max = Math.max(main_max,nums[i]);
+            main_max = Math.max(main_max, nums[i]);
         }
-        if(hm.size()==1)
+        if (hm.size() == 1) 
         {
             return main_max;
         }
         k -= hm.get(main_max);
-        while(k>0)
+        while (k > 0) 
         {
             main_max--;
-            if(hm.containsKey(main_max))
+            if (hm.containsKey(main_max)) 
             {
                 k -= hm.get(main_max);
             }
