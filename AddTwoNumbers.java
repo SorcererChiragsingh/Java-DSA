@@ -37,7 +37,8 @@ Explanation: 342 + 465 = 807.
 
         // Printing the resulting list
         System.out.print("Sum: ");
-        while (result != null) {
+        while (result != null) 
+        {
             System.out.print(result.val + " ");
             result = result.next;
         }
