@@ -35,7 +35,8 @@ public class MergeTwoSortedLists
 
         // Printing the merged list
         System.out.print("Merged List: ");
-        while (mergedList != null) {
+        while (mergedList != null) 
+        {
             System.out.print(mergedList.val + " ");
             mergedList = mergedList.next;
         }
