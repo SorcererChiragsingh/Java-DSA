@@ -30,7 +30,7 @@ public class SortedArray
         if (nums.length == 0) return 0;
 
         int j = 0;
-        for (int i = 1; i < nums.length; i++) 
+        for (int i = 1; i < nums.length; i++) // The initial implementation of removeDuplicates had a small bug. The loop should start from i = 1 to avoid comparing the first element with itself. The corrected method is provided above.
         {
             if (nums[j] != nums[i]) 
             {
