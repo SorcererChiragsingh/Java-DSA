@@ -3,7 +3,7 @@
 // Check if Array Is Sorted and Rotated Problem DSA
 // Solution:- https://www.youtube.com/watch?v=t1GLDWqWVQk&ab_channel=ifelsestatement
 
-// Problem
+// Array Problem
 
 // Easy 
 
