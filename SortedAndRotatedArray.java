@@ -3,6 +3,13 @@
 // Check if Array Is Sorted and Rotated Problem DSA
 // Solution:- https://www.youtube.com/watch?v=t1GLDWqWVQk&ab_channel=ifelsestatement
 
+// Problem
+
+// Easy / Medium
+
+// T.C = o()
+// S.C = o()
+
 
 public class SortedAndRotatedArray 
 {
@@ -41,7 +48,6 @@ public class SortedAndRotatedArray
         return true;
     }
 }
-
 
 /** 
 public class SortedAndRotatedArray 
