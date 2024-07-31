@@ -5,11 +5,18 @@
 
 // Problem
 
-// Easy / Medium
+// Easy 
 
 // T.C = o()
 // S.C = o()
+/** 
+Example 1:
 
+Input: nums = [3,4,5,1,2]
+Output: true
+Explanation: [1,2,3,4,5] is the original sorted array.
+You can rotate the array by x = 3 positions to begin on the the element of value 3: [3,4,5,1,2].
+*/
 
 public class SortedAndRotatedArray 
 {
