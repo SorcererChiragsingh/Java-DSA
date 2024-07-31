@@ -6,6 +6,46 @@
 
 public class SortedAndRotatedArray 
 {
+    public static void main(String[] args) 
+    {
+        // Initialize an array
+        int[] nums1 = {3, 4, 5, 1, 2}; // Expected output: true
+        int[] nums2 = {2, 1, 3, 4};    // Expected output: false
+
+        // Create an instance of SortedAndRotatedArray
+        SortedAndRotatedArray checker = new SortedAndRotatedArray();
+
+        // Check if the array is sorted and rotated
+        boolean result1 = checker.check(nums1);
+        boolean result2 = checker.check(nums2);
+
+        // Print the results
+        System.out.println("The array " + java.util.Arrays.toString(nums1) + " is sorted and rotated: " + result1);
+        System.out.println("The array " + java.util.Arrays.toString(nums2) + " is sorted and rotated: " + result2);
+    }
+
+    public boolean check(int[] nums) 
+    {
+        int count = 0;
+        for (int i = 0; i < nums.length; i++) 
+        {
+            if (nums[i] > nums[(i + 1) % nums.length]) 
+            {
+                count++;
+            }
+            if (count > 1) 
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+
+
+/** 
+public class SortedAndRotatedArray 
+{
     public boolean check(int[] nums) 
     {
         int count = 0;
@@ -23,3 +63,5 @@ public class SortedAndRotatedArray
         return true;
     }
 }
+
+*/
