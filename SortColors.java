@@ -20,8 +20,10 @@ Output: [0,0,1,1,2,2]
 
 */
 
-public class SortColors {
-    public static void main(String[] args) {
+public class SortColors 
+{
+    public static void main(String[] args) 
+    {
         // Initialize an array with colors (0, 1, 2)
         int[] nums = {2, 0, 2, 1, 1, 0};
 
@@ -33,14 +35,17 @@ public class SortColors {
 
         // Print the sorted array
         System.out.print("Sorted array: ");
-        for (int num : nums) {
+        for (int num : nums) 
+        {
             System.out.print(num + " ");
         }
     }
 
-    public void sortColors(int[] nums) {
+    public void sortColors(int[] nums) 
+    {
         int l = 0, i = 0, r = nums.length - 1;
-        while (i <= r) {
+        while (i <= r) 
+        {
             if (nums[i] == 0)
                 Swap(nums, l++, i++);
             else if (nums[i] == 2)
@@ -50,13 +55,13 @@ public class SortColors {
         }
     }
 
-    private void Swap(int[] nums, int p1, int p2) {
+    private void Swap(int[] nums, int p1, int p2) 
+    {
         int temp = nums[p1];
         nums[p1] = nums[p2];
         nums[p2] = temp;
     }
 }
-
 
 /** 
 public class SortColors 
