@@ -1,6 +1,6 @@
 // Leetcode:- https://leetcode.com/problems/n-ary-tree-postorder-traversal/description/?envType=daily-question&envId=2024-08-26
 // Leet Code Question no. 590
-// N-ary Tree Postorder Traversal Traversal Problem DSA
+// N-ary Tree Postorder Traversal  Problem DSA
 // Solution:- 
 
 // 
@@ -54,47 +54,57 @@ class Node {
 */
 
 
-class Node {
+class Node 
+{
     public int val;
     public List<Node> children;
 
     // Default constructor
-    public Node() {
+    public Node() 
+    {
         this.children = new ArrayList<>();  // Initialize the children list
     }
 
     // Constructor with a value
-    public Node(int _val) {
+    public Node(int _val) 
+    {
         this.val = _val;
         this.children = new ArrayList<>();  // Initialize the children list
     }
 
     // Constructor with a value and a list of children
-    public Node(int _val, List<Node> _children) {
+    public Node(int _val, List<Node> _children) 
+    {
         this.val = _val;
         this.children = _children;
     }
 }
 
-public class N_aryTreePostorderTraversal {
+public class N_aryTreePostorderTraversal 
+{
 
-    public List<Integer> postorder(Node root) {
+    public List<Integer> postorder(Node root) 
+    {
         ArrayList<Integer> list = new ArrayList<>();
-        if (root == null) {
+        if (root == null) 
+        {
             return list;
         }
         help(list, root);
         return list;
     }
 
-    private void help(ArrayList<Integer> list, Node root) {
-        for (Node child : root.children) {
+    private void help(ArrayList<Integer> list, Node root) 
+    {
+        for (Node child : root.children) 
+        {
             help(list, child);
         }
         list.add(root.val);  // Add the root value after all children have been processed
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         // Create the tree: 
         //        1
         //      / | \
