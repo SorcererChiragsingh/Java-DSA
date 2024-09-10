@@ -8,8 +8,8 @@
 
 // Medium
 
-// T.C = o(n)
-// S.C = o(n)
+// T.C = o(rows×columns)
+// S.C = o(rows×columns)
 
 // You are given two integers m and n, which represent the dimensions of a matrix.
 // You are also given the head of a linked list of integers.
