@@ -3,7 +3,7 @@
 // Insert Greatest Common Divisors in Linked List Problem DSA
 // Solution:- 
 
-// 
+// https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/solutions/5764192/best-solution-beats-100-with-proof-all-languages-easy-explained
 // Linked List, Math, NumberTheory
 
 // Medium
