@@ -10,8 +10,8 @@
 
 // Medium
 
-// T.C = o()
-// S.C = o()
+// T.C = o(nlogn+nk)
+// S.C = o(nk)
 
 // Given a list of non-negative integers nums, arrange them such that they form the largest number and return it.
 // Since the result may be very large, so you need to return a string instead of an integer.
@@ -32,6 +32,7 @@ Output: "9534330"
 
  // https://leetcode.com/problems/largest-number/solutions/5802529/beats-99-of-the-users
 import java.util.Arrays;
+import java.util.Scanner;
 public class LargestNumber 
 {
     public String largestNumber(int[] nums) 
@@ -59,5 +60,32 @@ public class LargestNumber
         }
 
         return result.toString();
+    }
+
+    public static void main(String[] args) {
+        // Create a Scanner object to take input from the user
+        Scanner sc = new Scanner(System.in);
+        
+        // Input the size of the array
+        System.out.println("Enter the size of the array:");
+        int n = sc.nextInt();
+        
+        // Initialize the array
+        int[] nums = new int[n];
+        
+        // Input the elements of the array
+        System.out.println("Enter the elements of the array:");
+        for (int i = 0; i < n; i++) {
+            nums[i] = sc.nextInt();
+        }
+
+        // Create an object of the LargestNumber class and call the method
+        LargestNumber largestNumberObj = new LargestNumber();
+        String result = largestNumberObj.largestNumber(nums);
+        
+        // Output the largest number
+        System.out.println("The largest number formed is: " + result);
+        
+        sc.close();
     }
 }
