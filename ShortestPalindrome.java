@@ -4,9 +4,10 @@
 // Solution:- https://www.youtube.com/watch?v=EV1WFTAr4LQ&ab_channel=CodeThoughts
 
 // https://leetcode.com/problems/shortest-palindrome/solutions/5810352/beats-100-beginner-friendly-python3-java-c-c-ruby-go-javascript
-// String; Rolling Hash; String Matching; Hash Function
 
-// Easy
+// Topics:- String; Rolling Hash; String Matching; Hash Function
+
+// Difficulty:- Hard
 
 // T.C = o(n)
 // S.C = o(n) 
