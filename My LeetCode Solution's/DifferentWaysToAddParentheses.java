@@ -3,7 +3,6 @@
 // Different Ways to Add Parentheses Problem DSA
 // Solution:- https://leetcode.com/problems/different-ways-to-add-parentheses/solutions/5807285/bhai-pahle-acche-se-recursive-and-memorization-samajhte-hain-use-baad-tabulation-pe-jaayenge
 
-// 
 // Math; String; Dynamic Programming; Recursion; Memoization Problem
 
 // Medium
@@ -11,23 +10,23 @@
 // T.C = o(4^n / √n)
 // S.C = o(4^n)
 
-// Given a string expression of numbers and operators, return all possible results from computing all the different possible ways to group numbers and operators. 
-// You may return the answer in any order.
-// The test cases are generated such that the output values fit in a 32-bit integer and the number of different results does not exceed 104.
-
+/**
+Given a string expression of numbers and operators, return all possible results from computing all the different possible ways to group numbers and operators. 
+You may return the answer in any order.
+The test cases are generated such that the output values fit in a 32-bit integer and the number of different results does not exceed 104.
+*/
 
 /**
-
+Example:-
 Input: expression = "2-1-1"
 Output: [0,2]
 
 Explanation:
 ((2-1)-1) = 0 
 (2-(1-1)) = 2
-
  */
 
- // https://leetcode.com/problems/different-ways-to-add-parentheses/solutions/5781291/beats-100-best-solution-easy-explaination
+// https://leetcode.com/problems/different-ways-to-add-parentheses/solutions/5781291/beats-100-best-solution-easy-explaination
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
