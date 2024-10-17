@@ -8,11 +8,9 @@
 // Stack, Tree, Depth-First Search, Binary Tree Problem
 
 /*
-
 ->Recursive
 ->Iterative
 ->Morris
-
  */
 
 // Easy
@@ -20,9 +18,10 @@
 // T.C = o(n)
 // S.C = o(n)
 
-// Given the root of a binary tree, return the postorder traversal of its nodes' values.
-
-// Recursive solution is trivial, could you do it iteratively?
+/** 
+ Given the root of a binary tree, return the postorder traversal of its nodes' values.
+ Recursive solution is trivial, could you do it iteratively?
+*/
 
 /**
 Input: root = [1,null,2,3]
