@@ -6,15 +6,16 @@
 // https://leetcode.com/problems/largest-number/solutions/5802828/greedy-approach-ka-proof-kya-hai-yeh-bhi-pata-hona-chahiye-lets-understand-it
 
 // Array; String; Greedy; Sorting Problem
-// 
 
 // Medium
 
 // T.C = o(nlogn+nk)
 // S.C = o(nk)
 
-// Given a list of non-negative integers nums, arrange them such that they form the largest number and return it.
-// Since the result may be very large, so you need to return a string instead of an integer.
+/**
+Given a list of non-negative integers nums, arrange them such that they form the largest number and return it.
+Since the result may be very large, so you need to return a string instead of an integer.
+*/
 
 /**
  Example 1:
@@ -30,7 +31,7 @@ Input: nums = [3,30,34,5,9]
 Output: "9534330"
  */ 
 
- // https://leetcode.com/problems/largest-number/solutions/5802529/beats-99-of-the-users
+// https://leetcode.com/problems/largest-number/solutions/5802529/beats-99-of-the-users
 import java.util.Arrays;
 import java.util.Scanner;
 public class LargestNumber 
