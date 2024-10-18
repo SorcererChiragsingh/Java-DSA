@@ -5,34 +5,33 @@
 
 // https://leetcode.com/problems/n-ary-tree-postorder-traversal/solutions/5691517/simple-java-c-code
 
-// Stack, Tree, Depth-First Search
+// Stack, Tree, Depth-First Search Problem
 
 /*
-
 ->Recursive
 ->Iterative
 ->Morris
-
  */
 
 // Easy
 
 // T.C = o(n)
 // S.C = o(n)
-
-// Given the root of an n-ary tree, return the postorder traversal of its nodes' values.
-
-// Nary-Tree input serialization is represented in their level order traversal. Each group of children is separated by the null value (See examples)
-
+/**
+Given the root of an n-ary tree, return the postorder traversal of its nodes' values.
+Nary-Tree input serialization is represented in their level order traversal. Each group of children is separated by the null value (See examples)
+*/
 import java.util.ArrayList;
 import java.util.List;
 
 /**
+Example:
+
 Input: root = [1,null,3,2,4,null,5,6]
 Output: [5,6,3,2,4,1]
- */
+*/
 
- // Follow up: Recursive solution is trivial, could you do it iteratively?
+// Follow up: Recursive solution is trivial, could you do it iteratively?
 
  /*
  Definition for a Node.
@@ -52,8 +51,6 @@ class Node {
     }
 };
 */
-
-
 class Node 
 {
     public int val;
