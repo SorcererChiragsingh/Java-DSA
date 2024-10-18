@@ -3,17 +3,16 @@
 // Palindrome Number Problem DSA
 // Solution:- https://www.youtube.com/watch?v=to4Ufp0MU4w&ab_channel=Technosage
 
-// 
 // Basic Maths Problem
-
 // Easy
 
 // T.C = o(n)
 // S.C = o(n)
-
-
-// Given an integer x, return true if x is a palindrome, and false otherwise.
-// An Integer is a palindrome when it reads the same backwards as forwards.
+/**
+Given an integer x, return true if x is a palindrome(An integer is a palindrome when it reads the same forward and backward.
+For example, 121 is a palindrome while 123 is not.), and false otherwise.
+An Integer is a palindrome when it reads the same backwards as forwards.
+*/
 /**
  Example 1:
 
