@@ -6,22 +6,21 @@
 // https://leetcode.com/problems/shortest-palindrome/solutions/5810352/beats-100-beginner-friendly-python3-java-c-c-ruby-go-javascript
 
 // Topics:- String; Rolling Hash; String Matching; Hash Function
-
 // Difficulty:- Hard
 
 // T.C = o(n)
 // S.C = o(n) 
 
-// You are given a string s. You can convert s to a palindrome by adding characters in front of it.
-// Return the shortest palindrome you can find by performing this transformation.
-
 /**
- Example 1:
+You are given a string s. You can convert s to a palindrome by adding characters in front of it.
+Return the shortest palindrome you can find by performing this transformation.
+*/
+/**
+Example 1:
 
 Input: s = "aacecaaa"
 Output: "aaacecaaa"
-
- */
+*/
 
  class shortestPalindrome
  {
