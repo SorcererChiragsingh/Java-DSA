@@ -12,10 +12,10 @@
 
 // T.C = o()
 // S.C = o()
-
-//  Given a list of 24-hour clock time points in "HH:MM" format, 
-// return the minimum minutes difference between any two time-points in the list.
-
+/**
+Given a list of 24-hour clock time points in "HH:MM" format, 
+return the minimum minutes difference between any two time-points in the list.
+*/
 
 
 /** 
