@@ -3,8 +3,21 @@
 // Set Matrix Zeroes Problem DSA
 // Solution:- https://leetcode.com/problems/set-matrix-zeroes/solutions/3472518/full-explanation-super-easy-constant-space ; https://www.youtube.com/watch?v=N0MgLvceX7M&ab_channel=takeUforward
 
+// Array; Hash Table; Matrix Problem
 // Medium
-// 
+// T.c =
+// S.C =
+
+/**
+Given an m x n integer matrix matrix, if an element is 0, set its entire row and column to 0's.
+You must do it in place.
+*/
+
+/**
+ * Example:-
+Input: matrix = [[1,1,1],[1,0,1],[1,1,1]]
+Output: [[1,0,1],[0,0,0],[1,0,1]]
+*/
 
 public class SetMatrixZeroes 
 {
