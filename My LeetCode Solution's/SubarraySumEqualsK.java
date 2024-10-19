@@ -4,12 +4,24 @@
 // Solution:- https://www.youtube.com/watch?v=xvNwoz-ufXA&ab_channel=takeUforward ; https://www.youtube.com/watch?v=XzwUBIkR9pA&ab_channel=AnujBhaiya
 
 // https://leetcode.com/problems/subarray-sum-equals-k/solutions/2680278/java-solution-with-explanatory-notes
-//
 
+// Array; Hash Table; Prefix Sum Problem
 // Medium
 
 // T.C = o(n)
 // S.C = o(n)
+
+/**
+Given an array of integers nums and an integer k, return the total number of subarrays whose sum equals to k.
+A subarray is a contiguous non-empty sequence of elements within an array.
+*/
+
+/**
+ Example 1:
+
+Input: nums = [1,1,1], k = 2
+Output: 2
+ */
 import java.util.HashMap;
 import java.util.Map;
 
