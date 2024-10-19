@@ -4,19 +4,20 @@
 // Solution:- 
 
 // https://leetcode.com/problems/spiral-matrix-iv/solutions/5758107/beats-100-explained-with-video-c-java-python-simulation-explained-in-detail
-// Array ,Linked List ,Matrix ,Simulation
 
+// Array ,Linked List ,Matrix ,Simulation
 // Medium
 
 // T.C = o(rows×columns)
 // S.C = o(rows×columns)
+/**
+You are given two integers m and n, which represent the dimensions of a matrix.
+You are also given the head of a linked list of integers.
+Generate an m x n matrix that contains the integers in the linked list presented in spiral order (clockwise), starting from the top-left of the matrix. 
+If there are remaining empty spaces, fill them with -1.
 
-// You are given two integers m and n, which represent the dimensions of a matrix.
-// You are also given the head of a linked list of integers.
-// Generate an m x n matrix that contains the integers in the linked list presented in spiral order (clockwise), starting from the top-left of the matrix. 
-// If there are remaining empty spaces, fill them with -1.
-
-// Return the generated matrix.
+Return the generated matrix.
+*/
 /**
  Example 1:
 
@@ -24,7 +25,6 @@ Input: m = 3, n = 5, head = [3,0,2,6,8,1,7,9,4,2,5,5,0]
 Output: [[3,0,2,6,8],[5,0,-1,-1,1],[5,2,4,9,7]]
 Explanation: The diagram above shows how the values are printed in the matrix.
 Note that the remaining spaces in the matrix are filled with -1.
-
  */
 
 import java.util.Arrays;
