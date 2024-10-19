@@ -3,12 +3,23 @@
 // Spiral Matrix Problem DSA
 // Solution:- https://www.youtube.com/watch?v=3Zv-s9UUrFM&ab_channel=takeUforward ; https://www.youtube.com/watch?v=1CdolnvxLs0&ab_channel=CodeHelp-byBabbar
 
-// Medium
 // Print the matrix in spiral manner
 // https://github.com/loveBabbar/CodeHelp-DSA-Busted-Series/blob/main/Lecture023%202D%20arrays/SpiralPrint.java
 // https://leetcode.com/problems/spiral-matrix/solutions/3503396/java-code
 // https://leetcode.com/problems/spiral-matrix/solutions/20599/super-simple-and-easy-to-understand-solution
 
+// Array; Matrix; Simulation Problem
+// Medium
+
+/**
+Given an m x n matrix, return all elements of the matrix in spiral order.
+*/
+
+/**
+ * Example 1:
+Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]
+Output: [1,2,3,6,9,8,7,4,5]
+*/
 import java.util.ArrayList;
 import java.util.List;
 
