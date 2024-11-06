@@ -3,8 +3,8 @@
 // Find the Index of the First Occurrence in a String Problem DSA
 // Solution:- 
 
-// 
-//  Problem
+// https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/solutions/5761145/easy-and-simple
+// Two Pointers; String; String Matching Problem
 // Easy
 
 // T.C = o((n - m + 1) * m) worst case
